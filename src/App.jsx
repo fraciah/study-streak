@@ -1,10 +1,11 @@
+import Home from './components/Home'
 import './index.css'
 
 function App() {
   
   return (
     <>
-      <h1>React App</h1>
+      <Home />
     </>
   )
 }
