@@ -1,10 +1,10 @@
-import home from '../assets/home.jpg';
+import homeImg from '../../assets/homeImg.jpg';
 
 const Home = () => {
     return (
         <div className="relative h-screen">
 
-            <img src={home} alt="home" className="absolute top-0 left-0 w-full h-full object-fill" />
+            <img src={homeImg} alt="home" className="absolute top-0 left-0 w-full h-full object-fill" />
 
             <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-extrabold">Study Streak</h1>
