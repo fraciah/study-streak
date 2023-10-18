@@ -10,11 +10,12 @@ const SignUpForm = () =>{
 
   return (
     <form onSubmit={handleSubmit}>
-      <InputField label="Username" name="username"  required />
-      <InputField label="Email" type="email" name="username"  required />
-      <PasswordField label="Password" name="password" required />
-      <PasswordField label="Confirm Password" name="confirmPassword" required />
-      <SignUpBtn>Sign Up</SignUpBtn>
+      <InputField label="Full Name" name="full name"  required />
+      <InputField label="Email" type="email" name="email"  required />
+      <InputField label="Username" name="username" required />
+      <PasswordField label="Password" type="password" name="password" required />
+      <PasswordField label="Confirm Password" type="password" name="confirmPassword" required />
+      <SignUpBtn>SIGN UP</SignUpBtn>
     </form>
   );
 }
