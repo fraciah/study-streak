@@ -15,7 +15,9 @@ const SignUpForm = () =>{
       <InputField label="Username" name="username" required />
       <PasswordField label="Password" type="password" name="password" required />
       <PasswordField label="Confirm Password" type="password" name="confirmPassword" required />
-      <SignUpBtn>SIGN UP</SignUpBtn>
+      <div className="w-full flex justify-center">
+        <SignUpBtn>SIGN UP</SignUpBtn>
+      </div>
     </form>
   );
 }
