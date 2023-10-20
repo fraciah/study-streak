@@ -1,14 +1,15 @@
 import SignUpForm  from '../../components/form/SignUpForm';
-import SignInBtn from '../../components/ui/SignInBtn';
+import LogInBtn from '../../components/ui/LogInBtn';
 
-export default function Register() {
+export default function SignUp() {
   return (
     <div className="h-screen flex justify-center items-center">
 
       <div className="flex w-2/3">
         <div className="bg-rose-500 border-2 border-rose-500 rounded-l-lg flex flex-col justify-center items-center w-1/3">
           <h2 className="text-white text-xl mb-1">Already have an account?</h2>
-          <SignInBtn/>
+          <h2 className="text-white text-xl mb-1">Welcome back !</h2>
+          <LogInBtn className="border border-white"/>  {/*className as a prop*/}
         </div>
 
         <div className="p-5 w-2/3 border-2 border-rose-500 rounded-r-lg bg-white">
