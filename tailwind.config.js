@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'logSign': "url('/src/assets/n.jpg')",
+      }
+    },
   },
   plugins: [],
 }
