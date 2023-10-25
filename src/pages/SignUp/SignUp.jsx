@@ -1,10 +1,10 @@
 import SignUpForm  from '../../components/form/SignUpForm';
 import LogInBtn from '../../components/ui/LogInBtn';
 
-export default function SignUp({ goToLogIn }) {
+export default function SignUp({ goToLogIn, goToHome }) {
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-logSign bg-no-repeat bg-cover bg-center">
-      <h2 className="text-4xl font-bold mb-5 text-gray-800">Study Streak</h2>
+      <h2 onClick={goToHome} className="text-4xl font-bold mb-5 text-gray-800 cursor-pointer">Study Streak</h2>
       <div className="flex w-2/3">
         <div className="bg-rose-500 bg-opacity-80 rounded-l-lg flex flex-col justify-center items-center w-1/3">
           <h2 className="text-white text-xl mb-1">Already have an account?</h2>
