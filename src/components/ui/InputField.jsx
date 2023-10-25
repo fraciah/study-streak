@@ -1,6 +1,5 @@
 const InputField = (props) => {
     const { label, ...otherProps } =  props;
-    console.log(otherProps);
 
     return (
         <div className="mb-1 flex flex-col items-start">
