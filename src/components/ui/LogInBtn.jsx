@@ -1,6 +1,6 @@
 const LogInBtn = ({ className, goToLogIn }) => {
     return(
-        <button className={`bg-rose-500 hover:bg-rose-600 text-white font-semibold rounded-3xl px-8 py-2 mt-1 ${className}`} onClick={goToLogIn}>
+        <button className={`bg-rose-500 hover:bg-rose-600 text-white sm:text-base text-sm font-semibold rounded-3xl sm:px-8 px-3 sm:py-2 py-1 my-1 ${className}`} onClick={goToLogIn}>
             LOG IN
         </button>
     )
