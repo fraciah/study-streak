@@ -1,4 +1,4 @@
-import homeImg from '../../assets/homeImg.jpg';
+import homeImg from '../assets/homeImg.jpg';
 
 const Home = ({ goToSignUp }) => {
     return (

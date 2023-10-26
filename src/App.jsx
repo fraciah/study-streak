@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 //pages
-import Home from './pages/Home/Home'
-import SignUp from './pages/SignUp/SignUp'
-import LogIn from './pages/LogIn/LogIn'
+import Home from './pages/Home'
+import SignUp from './pages/SignUp'
+import LogIn from './pages/LogIn'
+import Dashboard from "./pages/Dashboard";
 
 import './index.css'
 
@@ -12,6 +13,7 @@ function Navigation() {
   const goToHome = () => navigate('/');
   const goToSignUp = () => navigate('/signup');
   const goToLogIn = () => navigate('/login');
+  const goToDashboard = () => navigate('/dashboard');
 
   return (
     <Routes>
@@ -19,7 +21,9 @@ function Navigation() {
       <Route path="/signup" element={ <SignUp goToLogIn={goToLogIn}
                                               goToHome={goToHome} /> } />
       <Route path="/login" element={ <LogIn goToSignUp={goToSignUp}
-                                            goToHome={goToHome} /> } />
+                                            goToHome={goToHome}
+                                            goToDashboard={goToDashboard} /> } />
+      <Route path="/dashboard" element={ <Dashboard /> } />
     </Routes>
   );
 }

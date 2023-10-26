@@ -2,10 +2,12 @@ import LogInBtn from "../ui/LogInBtn";
 import PasswordField from '../ui/PasswordField';
 import InputField from '../ui/InputField';
 
-const LogInForm = () =>{
+const LogInForm = ({goToDashboard}) =>{
   const handleSubmit = (event) => {
     event.preventDefault();
     //handle form submission
+    //after successful login, navigate to dashboard
+    goToDashboard();
   };
 
   return (
@@ -13,7 +15,7 @@ const LogInForm = () =>{
       <InputField label="Username" name="username" required />
       <PasswordField label="Password" type="password" name="password" required />
       <div className="w-full flex justify-center">
-        <LogInBtn/>
+        <LogInBtn />
       </div>
     </form>
   );
