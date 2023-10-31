@@ -4,10 +4,10 @@ import LeftPanesDashB from "../components/ui/LeftPanesDashB";
 
 const Dashboard = () => {
     return (
-        <div className="grid grid-cols-1">
+        <div className="flex flex-col h-screen">
             <HeaderDashB/>
             
-            <div className="flex">
+            <div className="flex flex-grow">
                 <RightPanesDashB/>
                 <LeftPanesDashB/>
             </div>
