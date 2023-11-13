@@ -1,7 +1,7 @@
 import LogInForm  from '../components/form/LogInForm';
 import SignUpBtn from '../components/ui/SignUpBtn';
 
-export default function LogIn({ goToSignUp, goToHome, goToDashboard }) {
+const LogIn = ({ goToSignUp, goToHome, goToDashboard }) => {
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-logSign bg-no-repeat bg-cover bg-center">
       <h2 onClick={goToHome} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-gray-800 cursor-pointer">Study Streak</h2>
@@ -20,3 +20,4 @@ export default function LogIn({ goToSignUp, goToHome, goToDashboard }) {
     </div>
   );
 }
+export default LogIn;
