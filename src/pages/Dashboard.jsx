@@ -1,6 +1,6 @@
 import HeaderDashB from "../components/ui/HeaderDashB";
-import RightPanesDashB from "../components/ui/RightPanesDashB";
-import LeftPanesDashB from "../components/ui/LeftPanesDashB";
+import DashBItems from "../components/ui/DashBItems";
+import SubjectsPane from "../components/ui/SubjectsPane";
 
 const Dashboard = () => {
     return (
@@ -8,8 +8,8 @@ const Dashboard = () => {
             <HeaderDashB/>
             
             <div className="flex flex-grow">
-                <RightPanesDashB/>
-                <LeftPanesDashB/>
+                <DashBItems/>
+                <SubjectsPane/>
             </div>
 
         </div>
