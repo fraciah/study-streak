@@ -10,19 +10,14 @@ import './index.css'
 function Navigation() {
   const navigate = useNavigate();
   
-  const goToHome = () => navigate('/');
   const goToSignUp = () => navigate('/signup');
   const goToLogIn = () => navigate('/login');
-  const goToDashboard = () => navigate('/dashboard');
 
   return (
     <Routes>
-      <Route path="/" element={ <Home goToSignUp={goToSignUp} /> } />
-      <Route path="/signup" element={ <SignUp goToLogIn={goToLogIn}
-                                              goToHome={goToHome} /> } />
-      <Route path="/login" element={ <LogIn goToSignUp={goToSignUp}
-                                            goToHome={goToHome}
-                                            goToDashboard={goToDashboard} /> } />
+      <Route path="/" element={ <Home /> } />
+      <Route path="/signup" element={ <SignUp goToLogIn={goToLogIn} /> } />
+      <Route path="/login" element={ <LogIn goToSignUp={goToSignUp} /> } />
       <Route path="/dashboard" element={ <Dashboard /> } />
     </Routes>
   );

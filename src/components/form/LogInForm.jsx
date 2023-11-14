@@ -2,12 +2,11 @@ import LogInBtn from "../ui/LogInBtn";
 import PasswordField from '../ui/PasswordField';
 import InputField from '../ui/InputField';
 
-const LogInForm = ({goToDashboard}) =>{
+const LogInForm = () =>{
   const handleSubmit = (event) => {
     event.preventDefault();
     //handle form submission
     //after successful login, navigate to dashboard
-    goToDashboard();
   };
 
   return (
