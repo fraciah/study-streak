@@ -14,7 +14,8 @@ const Dashboard = () => {
             <HeaderDashB/>
             
             <div className="flex flex-grow">
-                <DashBItems setActivePane={setActivePane}/>
+                <DashBItems activePane={activePane} 
+                            setActivePane={setActivePane}/>
                 { activePane === 'Subjects' && <SubjectsPane/>}
                 { activePane === 'Calendar' && <CalendarPane/>}
                 { activePane === 'Analysis' && <AnalysisPane/>}
