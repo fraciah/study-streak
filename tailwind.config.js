@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'logSign': "url('/src/assets/n.jpg')",
+        'homeImg': "url('/src/assets/homeImg.jpg')",
       }
     },
   },
