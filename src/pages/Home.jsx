@@ -20,8 +20,10 @@ const Home = () => {
                 <button className='text-stone-300 border border-cyan-300 py-1 sm:py-2 px-4 sm:px-5 text-base font-medium hover:text-gray-800 hover:bg-cyan-300 transition duration-300'
                 onClick={() => setShowSignupModal(true)}>Get started</button>
             </div>
-            {showSignupModal && <SignupModal setShowSignupModal={setShowSignupModal}/>}
-            {showSigninModal && <SigninModal setShowSigninModal={setShowSigninModal}/>}
+            {showSignupModal && <SignupModal setShowSignupModal={setShowSignupModal} 
+                                             setShowSigninModal={setShowSigninModal}/>}
+            {showSigninModal && <SigninModal setShowSigninModal={setShowSigninModal}
+                                             setShowSignupModal={setShowSignupModal} />}
         </div>
     );
 }

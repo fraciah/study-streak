@@ -1,4 +1,4 @@
-const SignupModal = ({setShowSignupModal}) => {
+const SignupModal = ({setShowSignupModal, setShowSigninModal}) => {
     return(
         <div className="bg-gray-100 bg-opacity-50 flex flex-col justify-center items-center top-0 left-0 w-full h-full fixed">
             <div className="flex flex-col justify-center items-center bg-neutral-700 p-8 h-4/6 w-full sm:w-3/4 md:w-3/5 relative">
@@ -10,7 +10,7 @@ const SignupModal = ({setShowSignupModal}) => {
                 </div>
                 <div className="my-8">
                     <h3 className="text-stone-300 text-center md:text-lg">Already have an account? Welcome back !</h3>
-                    <h3 className="text-cyan-500 hover:text-cyan-600 text-center my-2 md:text-lg cursor-pointer transition duration-300">Sign in</h3>
+                    <h3 className="text-cyan-500 hover:text-cyan-600 text-center my-2 md:text-lg cursor-pointer transition duration-300" onClick={() => {setShowSignupModal(false); setShowSigninModal(true)}}>Sign in</h3>
                 </div>
             </div>
         </div>
