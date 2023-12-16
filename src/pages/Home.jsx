@@ -1,8 +1,10 @@
 import { useState } from "react";
 import SignupModal from "../components/modals/SignupModal";
+import SigninModal from "../components/modals/SigninModal";
 
 const Home = () => {
-    const [showModal, setShowModal] = useState(true);
+    const [showSignupModal, setShowSignupModal] = useState(false);
+    const [showSigninModal, setShowSigninModal] = useState(false);
     
     return (
         <div className='bg-homeImg bg-cover bg-center bg-no-repeat h-screen flex flex-col justify-center items-center px-2'>
@@ -14,11 +16,12 @@ const Home = () => {
                 </div>
             </div>
             <div className='flex justify-center items- space-x-8 mt-12'>
-                <button className='text-stone-300 border border-cyan-300 py-1 sm:py-2 px-4 sm:px-5 text-base font-medium hover:text-gray-800 hover:bg-cyan-300 transition duration-300'>Sign In</button>
+                <button className='text-stone-300 border border-cyan-300 py-1 sm:py-2 px-4 sm:px-5 text-base font-medium hover:text-gray-800 hover:bg-cyan-300 transition duration-300' onClick={() => setShowSigninModal(true)}>Sign In</button>
                 <button className='text-stone-300 border border-cyan-300 py-1 sm:py-2 px-4 sm:px-5 text-base font-medium hover:text-gray-800 hover:bg-cyan-300 transition duration-300'
-                onClick={() => setShowModal(true)}>Get started</button>
+                onClick={() => setShowSignupModal(true)}>Get started</button>
             </div>
-            {showModal && <SignupModal setShowModal={setShowModal}/>}
+            {showSignupModal && <SignupModal setShowSignupModal={setShowSignupModal}/>}
+            {showSigninModal && <SigninModal setShowSigninModal={setShowSigninModal}/>}
         </div>
     );
 }
