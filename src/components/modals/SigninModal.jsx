@@ -1,6 +1,6 @@
 const SigninModal = ({setShowSigninModal}) => {
     return(
-        <div className="bg-gray-100 flex flex-col justify-center items-center top-0 left-0 w-full h-full fixed">
+        <div className="bg-gray-100 bg-opacity-50 flex flex-col justify-center items-center top-0 left-0 w-full h-full fixed">
             <div className="bg-neutral-700 p-8 h-4/6 w-full sm:w-3/4 md:w-3/5 relative">
                 <p className="text-stone-300 text-2xl absolute top-2 right-2 cursor-pointer"
                     onClick={() => setShowSigninModal(false)}>&times;</p>
